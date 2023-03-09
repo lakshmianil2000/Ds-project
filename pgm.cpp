@@ -44,7 +44,7 @@ void enqueue(char str[N]){
 		}
 		rear=rear+1;
 		strcpy(queue_array[rear],str);
-		printf("\nFood Ordered.");
+		printf("\n Food Ordered.");
 	}
 }
 void main(){
@@ -54,7 +54,7 @@ void main(){
 	printf("\n\t=============");
 	do{
 		printf("\n\n1. ORDER\n2. VIEW ORDER\n3. ORDER DELIVERED\n4. EXIT");
-		printf("\nChoose your option : ");
+		printf("\n Choose your option : ");
 		scanf("%d",&op);
 		switch(op){
 			case 1:
@@ -66,11 +66,11 @@ void main(){
 						enqueue("BBQ");
 						break;
 					case 2:
-						printf("\nSelected Food Item : SHAKES");
+						printf("\n Selected Food Item : SHAKES");
 						enqueue("SHAKES");
 						break;
 					case 3:
-						printf("\nSelected Food Item : BURGER");
+						printf("\n Selected Food Item : BURGER");
 						enqueue("BURGER");
 						break;
 					default:
@@ -82,7 +82,7 @@ void main(){
 				display();
 				break;
 			case 3:
-				printf("\nWas the order delivered ? (Y/N) : ");
+				printf("\n Was the order delivered ? (Y/N) : ");
 				getchar();
 				scanf("%c",&od);
 				if(od=='Y'||od=='y'){
@@ -96,7 +96,7 @@ void main(){
 			case 4:
 				exit(0);
 			default:
-				printf("\nWrong Choice !");				
+				printf("\n Wrong Choice !");				
 		}
 	}while(1);
 }
